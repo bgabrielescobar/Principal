@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Bienvenido a mi pagina de presentación</title>
   <meta name="description" content="">
-  <meta name="author" content="Rosendo Rafael Sosa">
+  <meta name="author" content="Rosendo Rafael Sosa, Gabriel Balandran Escobar">
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,10 @@
         titulo = document.getElementsByClassName("Titulo");
         ano = document.getElementsByClassName("Año");
         document.getElementById("Idiomas").innerHTML = "IDIOMAS";
-
+        document.getElementById("Experiencia").innerHTML ="EXPERIENCIA";
+        document.getElementById("ContenidoExperiencia").innerHTML =
+        "AvanTI (Avanzando las Tecnologías de la Información) Tareas realizadas: </br>Desarrollé segmentos de código.</br> Elaboré una arquitectura MVC de software del proyecto. </br>capacité nuevo capital humano para el área de desarrollo.";
+        document.getElementById("HabilidadYConocimiento").innerHTML="HABILIDADES Y CONOCIMIENTOS ";
         for( var x = 0 ; x <= titulo.length ; x++ )
         {
           titulo[x].innerHTML = "Título:";
@@ -65,6 +68,11 @@
         titulo = document.getElementsByClassName("Titulo");
         ano = document.getElementsByClassName("Año");
         document.getElementById("Idiomas").innerHTML = "LANGUAGES";
+        document.getElementById("Experiencia").innerHTML = "EXPERIENCE";
+        document.getElementById("ContenidoExperiencia").innerHTML = 
+        "AvanTI (Avanzando las Tecnologías de la Información) Tasks: </br>I developed code segments. </br> I developed a project software MVC architecture. </br>I trained new human capital for the development area.";
+        document.getElementById("HabilidadYConocimiento").innerHTML = "SKILLS AND KNOWLEDGE";
+
         for( var x = 0 ; x <= titulo.length ; x++ )
         {
           titulo[x].innerHTML = "Title:";
@@ -148,9 +156,9 @@
       </ul>
 </div>
 <div class="section get-help">
-      <h3>EXPERIENCIA</h3>
+      <h3 id ="Experiencia">EXPERIENCIA</h3>
       <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
-        <p>AvanTI (Avanzando las Tecnologías de la Información)
+        <p id ="ContenidoExperiencia">AvanTI (Avanzando las Tecnologías de la Información)
               Tareas realizadas:</br> Desarrollé segmentos de código </br> Elaboré una arquitectura
               MVC de software del proyecto </br>capacité nuevo capital humano para el área de
               desarrollo.</p>
@@ -158,7 +166,7 @@
       </ul>
 </div>
 <div class="section get-help">
-      <h3>HABILIDADES Y CONOCIMIENTOS</h3>
+      <h3 id ="HabilidadYConocimiento">HABILIDADES Y CONOCIMIENTOS</h3>
       <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
           <li>Liderazgo</li>
           <li>Proactivo</li>
