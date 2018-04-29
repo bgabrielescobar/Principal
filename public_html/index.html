@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Bienvido a mi pagina de presentación</title>
+  <title>Bienvenido a mi pagina de presentación</title>
   <meta name="description" content="">
   <meta name="author" content="Rosendo Rafael Sosa">
   <!-- Mobile Specific Metas
@@ -30,6 +30,51 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
 
+
+  <script type="text/javascript" >
+  
+  var titulo;
+  var ano;
+
+    function cambiarIdioma(idiomaCambio)	{
+      if( idiomaCambio == "Español" )
+      {
+        document.getElementById("Nombre").innerHTML = "Hola, mi nombre es Gabriel :)"
+        document.getElementById("DatosPersonales").innerHTML = "DATOS PERSONALES";
+        document.getElementById("Edad").innerHTML = "24 Años";
+        document.getElementById("Telefono").innerHTML = "<b>Tel. Celular:</b> 686-321-4266";
+        document.getElementById("Estudios").innerHTML = "ESTUDIOS";
+        titulo = document.getElementsByClassName("Titulo");
+        ano = document.getElementsByClassName("Año");
+        document.getElementById("Idiomas").innerHTML = "IDIOMAS";
+
+        for( var x = 0 ; x <= titulo.length ; x++ )
+        {
+          titulo[x].innerHTML = "Título:";
+          ano[x].innerHTML = "Año:";
+        }
+
+      }
+      else
+      {
+        document.getElementById("Nombre").innerHTML = "Hi, my name is Gabriel :)";
+        document.getElementById("DatosPersonales").innerHTML = "ABOUT ME";
+        document.getElementById("Edad").innerHTML = "24 years old";
+        document.getElementById("Telefono").innerHTML = "<b>Telephone:</b>​ 686-321-4266";
+        document.getElementById("Estudios").innerHTML = "EDUCATION";
+        titulo = document.getElementsByClassName("Titulo");
+        ano = document.getElementsByClassName("Año");
+        document.getElementById("Idiomas").innerHTML = "LANGUAGES";
+        for( var x = 0 ; x <= titulo.length ; x++ )
+        {
+          titulo[x].innerHTML = "Title:";
+          ano[x].innerHTML = "Year:";
+        }
+      }
+     
+    }
+    </script>
+
 </head>
 <body>
 
@@ -37,7 +82,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="section phones">
-  <h1 style="font-weight:bold">Hola, mi nombre es Gabriel :)</h1>
+  <h1 id = "Nombre" style="font-weight:bold">Hola, mi nombre es Gabriel :)</h1>
   <img  style="
         border-radius:50%;
         width: 30%;
@@ -45,6 +90,15 @@
         src="resource/img/gabriel.jpg"/>
   </div>
 
+  <div style="position: fixed; width:100px; height: 100; top:1%
+  ; right: 2%;">
+
+    <button type = "button"  onclick="cambiarIdioma('Español')" >Español</button>
+
+    <button type = "button" onclick="cambiarIdioma('Ingles')" />English</button>
+
+  </div>
+<!--
   <div class="section get-help">
         <h3>Areas de Interes</h3>
         <ul>
@@ -53,7 +107,74 @@
           <li>Desarrollo de aplicaciones web</li>
 
         </ul>
-  </div>
+      </div>
+    -->
+    <div class="section get-help" width="50%" height="50%">
+      <h3 id = "DatosPersonales" >DATOS PERSONALES</h3>
+      <ul style="list-style-position: inside; text-align: left; padding-left: 40%;">
+      <li>Gabriel Balandran Escobar</li>
+      <li id = "Edad">24 Años</li>
+      <li>Villas del Rey cuarta Etapa, Ronda 235</li>
+      <li>Mexicali, Baja California. México</li>
+      <li id = "Telefono"><b>Tel. Celular:​</b> 686-321-4266</li>
+      <li><b>Email:</b> ​gabriel.balandran@uabc.edu.mx</li>
+
+      </ul>
+</div>
+<div class="section get-help">
+      <h3 id="Estudios">ESTUDIOS</h3>
+      <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
+        <li ><b class = "Titulo" >Título:</b> Técnico Programador de Software</li>
+        <li>CecyteBC</li>
+        <li><b  class = "Año">Año:</b> 2009-2012</li>
+        <li>Mexicali, BC, México</li>
+        
+        </br>
+        </br>
+        
+        <li ><b class = "Titulo">Título:</b> Lic. Sistemas Computacionales</li>
+        <li>UABC</li>
+        <li><b class = "Año">Año:</b> 2012 - 2018</li>
+        <li>Mexicali, BC, México</li>
+      </ul>
+</div>
+<div class="section get-help">
+      <h3 id ="Idiomas">IDIOMAS</h3>
+      <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
+          
+          <li><b>Español:</b> Natal</li>
+          <li><b>Ingles:</b> Medio</li>
+
+      </ul>
+</div>
+<div class="section get-help">
+      <h3>EXPERIENCIA</h3>
+      <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
+        <p>AvanTI (Avanzando las Tecnologías de la Información)
+              Tareas realizadas:</br> Desarrollé segmentos de código </br> Elaboré una arquitectura
+              MVC de software del proyecto </br>capacité nuevo capital humano para el área de
+              desarrollo.</p>
+
+      </ul>
+</div>
+<div class="section get-help">
+      <h3>HABILIDADES Y CONOCIMIENTOS</h3>
+      <ul  style="list-style-position: inside; text-align: left; padding-left: 40%;">
+          <li>Liderazgo</li>
+          <li>Proactivo</li>
+          <li>Responsable</li>
+          <li>Trabajo bajo presión</li>
+          <li>Dominio de la paquetería Microsoft Office</li>
+          <li>Manejo de sistema operativo Windows</li>
+          <li>Alto acoplamiento en trabajos en equipo</li>
+          <li>Capacidad analítica</li>
+          <li>Experiencia en soporte técnico</li>
+          <li>Usos de IDEs como NetBeans,Eclipse,CodeBlocks,Visual Studio.</li>
+          <li>Experiencia en la metodología SCRUM</li>
+          <li>Conocimiento en los lenguajes: C, C++, C#, Java, HTML, SQL.</li>
+
+      </ul>
+</div>
 
   <div class="section categories">
           <h3>Proyectos realizados y en proceso</h3>
